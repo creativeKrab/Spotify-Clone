@@ -25,37 +25,37 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Open Hearts',
       artist: 'The Weeknd',
       src: 'openHearts.mp3',
-      image: 'images/weeknd.jpg'
+      image: 'weeknd.jpg'
     },
     {
       name: 'Dynamite',
       artist: 'BTS',
       src: 'dynamite.mp3',
-      image: 'images/bts.jpg'
+      image: 'bts.jpg'
     },
     {
       name: 'Lust for Life (with The Weeknd)',
       artist: 'Lana Del Rey',
       src: 'lustforLife.mp3',
-      image: 'images/lana.jpg'
+      image: 'lana.jpg'
     },
     {
       name: 'Birds of a feather',
       artist: 'Billie Eilish',
       src: 'birdsofaFeather.mp3',
-      image: 'images/billie.jpg'
+      image: 'billie.jpg'
     },
     {
       name: 'We can\'t be Friends',
       artist: 'Ariana Grande',
       src: 'wecantbeFriends.mp3',
-      image: 'images/ariana.jpg'
+      image: 'ariana.jpg'
     },
     {
       name: 'Scientist',
       artist: 'Coldplay',
       src: 'scientist.mp3',
-      image: 'images/coldplay.jpg'
+      image: 'coldplay.jpg'
     },
   ];
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     songBanner.innerHTML = `<img src="${song.image}" alt="pic"><h6>${song.name} by ${song.artist}</h6>`;
     songBanner.style.display = 'none';
     currentSongName.textContent = `${song.name} by ${song.artist}`;
-    playButton.src = 'images/pause.png'; // Change to pause icon
+    playButton.src = 'pause.png'; // Change to pause icon
     showModal(song);
   }
 
@@ -122,10 +122,10 @@ document.addEventListener('DOMContentLoaded', () => {
   playButton.addEventListener('click', () => {
     if (audio.paused) {
       audio.play();
-      playButton.src = 'images/pause.png'; // Change to pause icon
+      playButton.src = 'pause.png'; // Change to pause icon
     } else {
       audio.pause();
-      playButton.src = 'images/play.png'; // Change to play icon
+      playButton.src = 'play.png'; // Change to play icon
     }
   });
 
